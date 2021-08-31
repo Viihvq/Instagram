@@ -19,7 +19,7 @@ body{
 
 .instagram-wrapper{
     display: flex;
-    background-color: royalblue;
+   /* background-color: royalblue;*/
     align-items: center; 
     justify-content: start; /* da esquerda para a direita*/
     width: 60%;
@@ -27,7 +27,7 @@ body{
 }
 
 .instagram-phone{
-    background-color: black;
+    /*background-color: black;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,6 +35,50 @@ body{
 }
 
 .instagram-phone img{
-    background-color: pink;
+   /* background-color: pink;*/
     height: 50rem;
 }
+
+.instagram-continue{
+    /*background-color: powderblue;*/
+    display: flex;
+    align-items: center; /*horizontal por conta do flex direction*/
+    justify-content: space-around; /*vertical por conta do flex direction*/
+    flex-direction: column; /*transforma em coluna, deixa um debaixo do outro. Muda o eixo x->y,y->x*/
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group{
+    /*background-color: red;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightblue;
+}
+
+.group:nth-child(1){ /* seletor de css que pega os filhos daquele elemento, respectivamente por 1,2..n.*/
+    min-height: 19rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img{
+    height: 6rem;
+}
+
+/* vh = viewport  Então, por exemplo, se a altura do navegador é 900px, 1vh equivale a 9px*/

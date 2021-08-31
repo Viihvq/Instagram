@@ -10,11 +10,12 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background-color: rgba(11, 18, 32, 0.925); /*243*/
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    
 }
 
 .instagram-wrapper{
@@ -47,6 +48,8 @@ body{
     flex-direction: column; /*transforma em coluna, deixa um debaixo do outro. Muda o eixo x->y,y->x*/
     width: 50%;
     min-height: 34rem;
+
+    color: rgb(198, 206, 240);
 }
 
 .group{
@@ -55,10 +58,12 @@ body{
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+   /* background-color: white;*/
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid lightblue;
+
+    background-color: rgba(39, 49, 70, 0.932);
 }
 
 .group:nth-child(1){ /* seletor de css que pega os filhos daquele elemento, respectivamente por 1,2..n.*/
@@ -79,6 +84,89 @@ body{
 
 .profile-photo img{
     height: 6rem;
+}
+
+.instagram-login{
+    background-color: #0095F6;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.instagram-logout{
+    color: #0095F6;
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(160, 160, 160);
+}
+
+.link-blue{
+    color: #0095F6;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly; /*deixa os mesmo espaços nos lados quanto no meio*/
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('./apple-button.png') ;
+}
+
+.app-download:nth-child(2){
+    background-image: url(./googleplay-button.png);
+}
+
+/* media queries */
+
+@media (max-width:1024px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    body{
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper{
+        width: 90%;
+    }
+
+    .instagram-phone{
+        display: none;
+    }
+
+    .instagram-continue{
+        width: 100%;
+    }
+
+    .group{
+        border: 1px solid transparent;
+    }
 }
 
 /* vh = viewport  Então, por exemplo, se a altura do navegador é 900px, 1vh equivale a 9px*/
